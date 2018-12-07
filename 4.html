@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+	.vehicle{
+	position:relative;
+	left:0%; top:30%;
+	width:300px; height:100px;
+	border-radius:20%;
+	background:blue;
+	display:block;
+	margin:0;
+	animation-name:bus;
+	animation-duration:4s;
+	}
+	.wheel1{
+	position:relative;
+	left:0%; top:25%;
+	width:50px; height:50px;
+	border-radius:50%;
+	background:grey;
+	border:5px solid black;
+	display:block;
+	margin:0;
+	animation-name:bus;
+	animation-duration:4s;
+	}
+	.wheel2{
+	position:absolute;
+	width:50px; height:50px;
+	border-radius:50%;
+	border:5px solid black;
+	background:grey;
+	display:block;
+	margin:100 0 0 180;
+	animation-name:bus;
+	animation-duration:4s;
+	}
+	@keyframes bus{0%{left:0%;}
+	25%{left:50px;}
+	50%{left:100px;}
+	75%{left:50px;}
+	100%{left:0px;}
+	}
+	.road{
+	position:fixed;
+	left:0%;z-index:0;
+	width:500px; height:20px;
+	margin:160 0 0 10;
+	background:maroon;}
+	.signal{
+	position:fixed;
+	left:0%;z-index:0;
+	width:20px; height:250px;
+	margin:-85 0 0 400;
+	background:black;
+	}
+	.l1{
+	position:fixed;
+	width:60px; height:60px;
+	border-radius:50%;
+	margin:-75 0 0 370;
+	background-color:grey;
+	animation:signal 1s infinite;
+	}
+	@keyframes signal{0%{background-color:grey;}
+	50%{background-color:red;}
+	100%{background-color:grey;}}
+</style>
+</head>
+<body>
+<div class="vehicle"><h2 align="center">Bus</h2>
+</div><div class="wheel1"></div><div class="wheel2"></div>
+<figure class="road"></figure>
+<div name="signal"><figure class="signal"></figure>
+<figure class="l1"></figure>
+</div></body>
+</html>

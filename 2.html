@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	#abc{
+	position:absolute;
+	left:50%; top:50%;
+	z-index:1;
+	width:100px; height:100px;
+	border:30px solid #fff6e5;
+	border-radius:50%;
+	-webkit-animation:cco 1s infinite;
+	animation:cco 1s infinite;
+	}
+	#abcd{
+	position:relative;
+	width:80%; height:80%;
+	
+	margin:10 10;
+	border-radius:50%;
+	-webkit-animation:cci 1s infinite;
+	animation:cci 1s infinite;
+	}
+	#abcd1{
+	position:absolute;
+	width:60%; height:60%;
+	margin:-80 0 0 20;
+	border-radius:50%;1s infinite;
+	animation:cci1 1s infinite;
+	}
+	@-webkit-keyframes cco{from{background-color:#fff6e5;}
+							to{background-color:#ffdc9f;}}
+	@keyframes cco{from{background-color:#fff6e5;}
+					to{background-color:#ffdc9f;}}	
+	@-webkit-keyframes cci{from{background-color:#ffdc9f;}
+							to{background-color:#ffc259;}}
+	@keyframes cci{from{background-color:#ffdc9f;}
+					to{background-color:#ffc259;}}
+	@-webkit-keyframes cci1{from{background-color:#ffc259;}
+							to{background-color:#ffa812;}}
+	@keyframes cci1{from{background-color:#ffc259;}
+					to{background-color:#ffa812;}}				
+</style>
+</head>
+<body>
+<div id="abc">
+	<div id="abcd"></div>
+		<div id="abcd1"></div></div>
+</body>
+</html>

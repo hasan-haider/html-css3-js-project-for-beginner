@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="1.html">
+<style>
+	html{overflow-y:scroll;}
+	body {margin:0px; padding:0px; font-size:13px; font-family:verdana,Times,serif,arial; color:#979797; background-color:lightblue;}
+	a{outline:none; text-decoration:none; color:#979797;}
+	a.alogin{color:red;}
+	a.aregister{color:red;}
+	div.top{display:block;}
+	div.top1{padding-left:10%; padding-right:10%; padding-top:3%; margin:0px; display:block; width:80%;height:80px; font-family:arial; color:black;}
+	div.topmenu{ display:block; width:100%; background-color:maroon;  padding:1px 10%;}
+	li{display:inline; font-size:20px; padding:10%; }
+</style>
+</head>
+<body>
+<div class="top">
+	<div class="top1"><hr>
+		<div style="float:left; width:150px; font-size:150%;"><center>Contact us<br>+91 9999999909</center>
+		</div>
+		<div style="float:right; width:99px;"><span><a class="alogin" href="#">Login</a>  | <a class="aregister" href="#">Register</a> </span></div>
+	</div>
+	<div class="topmenu">
+	<nav>
+		<ul class="topmenu"><li><a href="#">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Downloads</a></li>
+		</ul>
+	</div>
+</div>
+<div>
+	<form name="form1" method="post" action="1.html" style="padding:10px;">
+		<h3 align="center"><b>Quiz</b></h3><Br><br>
+		<h5><b>Q1. Who is th owner of this experiment? </b></h5>
+		<input type="radio" name="q0" id="1">a. Hasan<br>
+		<input type="radio" name="q0" id="2">b. mnsr<br>
+		<input type="radio" name="q0" id="3">c. amn<br>
+		<br>
+		<h5><b>Q1. Who is th owner of this experiment? </b></h5>
+		<input type="radio" name="q1" id="human">a. Human<br>
+		<input type="radio" name="q1" id="mnsr">b. mnsr<br>
+		<input type="radio" name="q1" id="amn">c. amn<br>
+	<button onclick="return score()">Submit</button>
+	</form>
+</div>
+<!--JS-->
+<script>
+function score(){
+	marks=0;
+	if(document.getElementById("1").checked==true)
+	{
+	marks+=1;
+	}
+	if(document.getElementById("human").checked==true)
+		marks+=1;
+		else
+		marks+=0;
+	
+		alert ("Score is"+marks);
+	}
+</script>	
+</body>
+</html>
