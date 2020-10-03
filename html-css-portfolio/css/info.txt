@@ -1,0 +1,1 @@
+you can add more css styles and edit the existing styling in "style.css" file
