@@ -5,5 +5,8 @@
 2 3 and 4 contains css3 with animations.
 --------
 index.html have basic website template for school projects. (with menubar)
+
 heart.html contains code for making heart using HTML, CSS.
+
 sphere.html contains code for sphere using HTML, CSS. 
+
